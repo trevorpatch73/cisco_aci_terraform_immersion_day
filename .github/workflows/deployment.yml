@@ -11,7 +11,7 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     env:
-      TERRAFORM_STATUS: destroy
+      TERRAFORM_STATUS: apply
       #TF_LOG: "DEBUG"
       
       TF_VAR_CISCO_ACI_TERRAFORM_USERNAME: ${{ secrets.TF_VAR_CISCO_ACI_TERRAFORM_USERNAME }}
